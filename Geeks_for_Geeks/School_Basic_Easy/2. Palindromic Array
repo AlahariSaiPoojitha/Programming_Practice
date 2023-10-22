@@ -1,0 +1,17 @@
+https://practice.geeksforgeeks.org/problems/palindromic-array-1587115620/1
+
+# Your task is to complete this function
+# Function should return True/False or 1/0
+
+def PalinArray(arr ,n):
+    # Code here
+    for i in arr:
+        element = str(i)
+        reversed_element = element[::-1]
+        if element == reversed_element:
+            pass
+        else:
+            return 0
+    return 1
+    
+

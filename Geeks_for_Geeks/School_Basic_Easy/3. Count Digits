@@ -1,0 +1,20 @@
+https://practice.geeksforgeeks.org/problems/count-digits5716/1
+
+#User function Template for python3
+
+
+class Solution:
+    def evenlyDivides (self, N):
+        # code here
+        count = 0
+        given_input = str(N)
+        for i in given_input:
+            if int(i) == 0:
+                pass
+            elif N % int(i) == 0:
+                count+=1
+            else:
+                pass
+        return count
+
+

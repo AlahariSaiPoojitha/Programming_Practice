@@ -1,0 +1,16 @@
+https://practice.geeksforgeeks.org/problems/find-the-median0527/1
+
+#User function Template for python3
+
+class Solution:
+	def find_median(self, v):
+		# Code here
+		v.sort(reverse = True)
+		i = len(v)
+		a = int(i/2)
+		#v = v
+		if i%2 == 0:
+		    return int((v[a]+v[(a)-1])/2)
+		else:
+		    return int(v[int(a)])
+

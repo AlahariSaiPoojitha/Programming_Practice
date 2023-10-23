@@ -1,0 +1,26 @@
+'''
+https://practice.geeksforgeeks.org/problems/find-index4752/1
+
+'''
+#User function Template for python3
+
+class Solution:
+    def findIndex (self,a, N, key ):
+        #code here.
+        if key not in a:
+            return [-1,-1]
+        else:
+            
+            for i in a:
+                if i == key:
+                    start_index = a.index(i)
+                    break
+            rev_a = a[::-1]        
+            for i in rev_a:
+                if i == key:
+                    end_index = N-1-rev_a.index(i)
+                    break
+            
+            result = [start_index, end_index]
+            return result
+

@@ -1,0 +1,12 @@
+'''
+https://practice.geeksforgeeks.org/problems/swap-kth-elements5500/1
+'''
+
+#User function Template for python3
+class Solution:
+	
+	def swapKth(self,arr, n, k):
+		# code here
+		arr[k-1],arr[n-k] = arr[n-k],arr[k-1]
+		return arr
+

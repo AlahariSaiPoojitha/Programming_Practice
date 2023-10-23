@@ -1,0 +1,22 @@
+'''
+https://practice.geeksforgeeks.org/problems/display-longest-name0853/1
+'''
+#User function Template for python3
+
+class Solution:
+    def longest(self, names, n):
+    	# code here
+    	longest_length = len(names[0])
+    	longest_name = names[0]
+    	for name in names:
+    	    if len(name) >= longest_length:
+    	        longest_length = len(name)
+    	        longest_name = name
+    	    else:
+    	        pass
+    	return longest_name
+    	    
+    	
+    	
+
+

@@ -1,0 +1,13 @@
+'''
+https://practice.geeksforgeeks.org/problems/remove-vowels-from-string1446/1
+'''
+#User function Template for python3
+class Solution:
+	def removeVowels(self, S):
+		# code here
+		result = ''
+		vowels = "AEIOUaeiou"
+		for char in S:
+		    if char not in vowels:
+		        result+=char
+		return result

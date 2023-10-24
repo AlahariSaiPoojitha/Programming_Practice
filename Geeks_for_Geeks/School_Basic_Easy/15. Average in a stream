@@ -1,0 +1,21 @@
+'''
+https://practice.geeksforgeeks.org/problems/average4856/1
+'''
+
+#User function Template for python3
+
+class Solution:
+	def streamAvg(self, arr, n):
+		# code here
+		
+		avgs = []
+		sum = 0
+		for i in range(0,n):
+		    sum += arr[i]
+		    avgs.append(sum/(i+1))
+		return avgs    
+		    
+		    
+		    
+
+

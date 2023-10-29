@@ -1,0 +1,17 @@
+'''
+https://practice.geeksforgeeks.org/problems/find-the-camel3348/1
+'''
+
+#User function Template for python3
+
+class Solution:
+    def countCamelCase (self,s):
+        # your code here
+        count = 0
+        for char in s:
+            if char.upper() == char:
+                count += 1
+            else:
+                pass
+        return count
+

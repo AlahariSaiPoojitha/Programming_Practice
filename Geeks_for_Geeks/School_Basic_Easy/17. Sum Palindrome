@@ -1,0 +1,21 @@
+'''
+https://practice.geeksforgeeks.org/problems/sum-palindrome3857/1
+'''
+
+#User function Template for python3
+
+class Solution:
+    def isSumPalindrome (self, n):
+        # code here 
+        for i in range(0,5):
+            str_number = str(n)
+            reverse_n = int(str_number[::-1])
+            if n == reverse_n:
+                return n
+            else:
+                check = n + reverse_n
+                if str(check) == str(check)[::-1]:
+                    return check
+                else:
+                    n = check
+        return -1
